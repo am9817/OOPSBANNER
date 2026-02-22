@@ -11,8 +11,8 @@ public class oopsbannerapp
             " *****     *****    *         *****   "
         };
 
-        for (String line : banner) {
+        fgit or (String line : banner) {
             System.out.println(line);
-        }gi
+        }
     }
 }
