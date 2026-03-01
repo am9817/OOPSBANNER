@@ -1,18 +1,19 @@
 public class oopsbannerapp
 {
    public static void main(String[] args) {
-        String[] banner = {
-            " *****     *****     *****      ***** ",
-            "*     *   *     *   *     *    *     *",
-            "*     *   *     *   *     *    *      ",
-            "*     *   *     *   *****      *****  ",
-            "*     *   *     *   *              *  ",
-            "*     *   *     *   *        *     *  ",
-            " *****     *****    *         *****   "
+        String[] lines = {
+            String.join("", "  ****", "    **** ", "   ***** ", "  **** "),
+            String.join("", " **  ** ", " **  ** ", " **  ** ", " **   ** "),
+            String.join("", " **  ** ", " **  ** ", " **  ** ", "  ** "),
+            String.join("", " **  ** ", " **  ** ", " ***** ", "    *** "),
+            String.join("", " **  ** ", " **  ** ", " ** ", "         ** "),
+            String.join("", " **  ** ", " **  ** ", " ** ", "   **   ** "),
+            String.join("", "  *** ", "    **** ", "  ** ", "    ****")
         };
 
-        for (String line : banner) {
-            System.out.println(line);
+        // Use a for-each loop to iterate through the array and print each line 
+        for (String line : lines) {
+            System.out.println(line); 
         }
     }
 }
